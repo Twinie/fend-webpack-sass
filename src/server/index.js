@@ -6,7 +6,7 @@ var cors = require('cors')
 
 var json = {
     'title': 'test json response',
-    'message': 'this is a message',
+    'message': 'This is a message',
     'time': 'now'
 }
 
@@ -16,7 +16,7 @@ app.use(cors())
 app.use(bodyParser.json())
 // to use url encoded values
 app.use(bodyParser.urlencoded({
-  extended: true
+    extended: true
 }))
 
 app.use(express.static('dist'))
